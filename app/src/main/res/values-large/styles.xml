@@ -1,0 +1,106 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <!-- Backward-compatible version of ?android:attr/buttonBarStyle -->
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+
+    <style name="score_column.left" parent="score_column">
+        <item name="android:background">@color/blue</item>
+    </style>
+
+    <style name="score_column.right" parent="score_column">
+        <item name="android:background">@color/red</item>
+    </style>
+
+    <style name="score_column">
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:weightSum">4</item>
+    </style>
+
+    <style name="score" parent="scoreboard_text">
+        <item name="android:textSize">240sp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="penalty" parent="scoreboard_text">
+        <item name="android:textSize">90sp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="advantage" parent="scoreboard_text">
+        <item name="android:textSize">90sp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="scoreboard_text">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:text">00</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="timer">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">390dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">120sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#000000</item>
+        <item name="android:text">00:00</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="label" parent="scoreboard_text">
+        <item name="android:textSize">40sp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:gravity">center_horizontal|top</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="penalty_label" parent="label">
+        <item name="android:text">PEN</item>
+    </style>
+    <style name="advantage_label" parent="label">
+        <item name="android:text">ADV</item>
+    </style>
+    <style name="label_wrapper">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:weightSum">3</item>
+    </style>
+
+
+    <!-- Backward-compatible version of ?android:attr/buttonBarButtonStyle -->
+    <style name="ButtonBarButton"/>
+
+</resources>
